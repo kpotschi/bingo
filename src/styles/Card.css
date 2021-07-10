@@ -1,17 +1,21 @@
 .card {
-	border: 2px solid green;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 20px;
 	transition: all 170ms ease-in;
+	padding: 5px;
+	user-select: none;
+}
+
+.card::before {
+	content: '';
+	width: 0;
+	padding-bottom: 100%;
 }
 
 .match {
-	background-color: green;
+	background-color: grey;
 }
-
-.noMatch {
-	background-color: red;
+​ .noMatch {
+	background-color: rgb(204, 193, 193);
 }

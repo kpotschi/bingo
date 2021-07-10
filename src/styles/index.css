@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface');
+
+/* 'https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rakkas&display=swap' */
+
+html {
+	background: url('../imgs/bg.JPG');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+	/* font-family: 'Rakkas', cursive; */
+	font-family: 'Abril Fatface', cursive;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
