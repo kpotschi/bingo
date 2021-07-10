@@ -1,27 +1,12 @@
 import './App.css';
-import { data } from './data/sentences.js';
+import { getRandomData } from './data/sentences.js';
 import { Card } from './components/Card';
 import { useState, useEffect } from 'react';
+import { winHandler } from './data/winHandler.js';
 
 function App() {
-	const [userArray, setUserArray] = useState(data);
-	const [RandomArray, setRandomArray] = useState([]);
-
-	const shuffleArray = (array) => {
-		for (let i = array.length - 1; i > 0; i--) {
-			const j = Math.floor(Math.random() * (i + 1));
-			const temp = array[i];
-			array[i] = array[j];
-			array[j] = temp;
-		}
-		return array;
-	};
-
-	useEffect(() => {
-		let bla = shuffleArray(userArray);
-		// this line below break it, even though RandomArray is never used!
-		setRandomArray(bla);
-	}, []);
+	const [userArray, setUserArray] = useState(getRandomData());
+	const [wins, setWins] = useState();
 
 	const matchHandler = (e) => {
 		e.preventDefault();
@@ -34,19 +19,42 @@ function App() {
 			})
 		);
 	};
+	const resetHandler = () => {
+		let reseter = getRandomData();
+		setUserArray(reseter);
+	};
+
+	useEffect(() => {
+		setWins(winHandler(userArray));
+	}, [userArray]);
 
 	return (
 		<div className='App'>
 			<div className='game'>
-				{userArray.map((item, index) => (
-					<Card
-						matchHandler={matchHandler}
-						key={index}
-						sentence={item.sentence}
-						match={item.match}
-						identifier={index}
-					/>
-				))}
+				{userArray.map((item, index) => {
+					if (index === 12) {
+						return (
+							<Card
+								key={index}
+								sentence={'JOKER'}
+								match={(item.match = true)}
+								identifier={index}
+							/>
+						);
+					} else {
+						return (
+							<Card
+								matchHandler={matchHandler}
+								key={index}
+								sentence={item.sentence}
+								match={item.match}
+								identifier={index}
+							/>
+						);
+					}
+				})}
+				<button onClick={resetHandler}>Reset</button>
+				<div>{wins}</div>
 			</div>
 		</div>
 	);
