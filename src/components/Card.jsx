@@ -7,14 +7,18 @@ export const Card = ({ sentence, matchHandler, match, identifier }) => {
 
 	if (identifier === 12) {
 		return (
-			<div id={identifier} className='card'>
-				{'JOKER'}
+			<div className='square'>
+				<div id={identifier} className='card joker match'>
+					{'JOKER'}
+				</div>
 			</div>
 		);
 	}
 	return (
-		<div onClick={matchHandler} id={identifier} className={className}>
-			{sentence}
+		<div className='square'>
+			<div onClick={matchHandler} id={identifier} className={className}>
+				{sentence}
+			</div>
 		</div>
 	);
 };

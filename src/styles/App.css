@@ -18,13 +18,20 @@
 h1 {
 	font-size: 5rem;
 	font-style: italic;
+	border: 4px solid #ffffff;
+	box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 10px;
 }
 
 main {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	height: 70vh;
-	border: 2px solid red;
+	width: 100%;
+	max-width: 700px;
 }
 
 #footer {
@@ -33,4 +40,26 @@ main {
 	align-items: center;
 	width: 80%;
 	height: 15vh;
+}
+
+#footer button {
+	font-size: 2.2rem;
+	color: white;
+	font-style: italic;
+	border: 4px solid #ffffff;
+	box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 10px;
+}
+
+#winCounter {
+	font-size: 2.2rem;
+	color: white;
+	font-style: italic;
+	border: 4px solid #ffffff;
+	box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 30px;
 }

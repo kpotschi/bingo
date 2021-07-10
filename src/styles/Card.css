@@ -1,21 +1,35 @@
+.square {
+	position: relative;
+}
 .card {
+	box-sizing: border-box;
+	padding: 10px;
+
+	position: absolute;
+	height: 100%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
+	text-align: center;
 	align-items: center;
-	transition: all 170ms ease-in;
-	padding: 5px;
-	user-select: none;
+	border: 2px solid black;
+	box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	background-color: rgba(255, 255, 255, 0.95);
+	transition: all 130ms ease-in;
 }
 
-.card::before {
-	content: '';
-	width: 0;
-	padding-bottom: 100%;
+.joker {
+	font-size: 2.2rem;
+	color: rgb(233, 72, 32);
+	background-color: grey;
+	z-index: 4;
 }
 
 .match {
 	background-color: grey;
-}
-​ .noMatch {
-	background-color: rgb(204, 193, 193);
+	background-image: url(../imgs/cross.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-y: center;
 }

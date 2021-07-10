@@ -27,7 +27,7 @@ function App() {
 			</main>
 			<div id='footer'>
 				<button onClick={resetHandler}>Reset</button>
-				<div>Wins : {wins}</div>
+				<div id='winCounter'>Wins : {wins}</div>
 			</div>
 		</div>
 	);
