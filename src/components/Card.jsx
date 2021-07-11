@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Card.css';
+import cross from '../imgs/cross.png';
 
 export const Card = ({ sentence, matchHandler, match, identifier }) => {
 	let className = 'card';
@@ -9,7 +10,8 @@ export const Card = ({ sentence, matchHandler, match, identifier }) => {
 		return (
 			<div className='square'>
 				<div id={identifier} className='card joker match'>
-					{'JOKER'}
+					<img className='cross' src={cross} alt='cross' />
+					<div className='card--text__joker'>Joker</div>
 				</div>
 			</div>
 		);
@@ -17,7 +19,8 @@ export const Card = ({ sentence, matchHandler, match, identifier }) => {
 	return (
 		<div className='square'>
 			<div onClick={matchHandler} id={identifier} className={className}>
-				{sentence}
+				{match && <img className='cross' src={cross} alt='cross' />}
+				<div className='card--text'>{sentence}</div>
 			</div>
 		</div>
 	);

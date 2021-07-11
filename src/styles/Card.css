@@ -19,17 +19,29 @@
 	transition: all 130ms ease-in;
 }
 
-.joker {
-	font-size: 2.2rem;
-	color: rgb(233, 72, 32);
+.match {
+	color: white;
 	background-color: grey;
-	z-index: 4;
 }
 
-.match {
+.joker {
+	color: white;
 	background-color: grey;
-	background-image: url(../imgs/cross.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position-y: center;
+}
+
+.card--text {
+	pointer-events: none;
+	z-index: 3;
+}
+
+.card--text__joker {
+	pointer-events: none;
+	z-index: 5;
+}
+
+.cross {
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	pointer-events: none;
 }

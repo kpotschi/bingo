@@ -6,7 +6,7 @@ html {
 	background: url('../imgs/bg.JPG');
 	background-size: cover;
 	background-repeat: no-repeat;
-
+	background-position: center;
 	height: 100vh;
 	user-select: none;
 }
@@ -19,9 +19,4 @@ body {
 	font-family: 'Abril Fatface', cursive;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
 }

@@ -4,6 +4,7 @@ import '../styles/Game.css';
 
 export const Game = ({ userArray, setUserArray }) => {
 	const matchHandler = (e) => {
+		console.log(e.target);
 		e.preventDefault();
 		setUserArray(
 			userArray.map((item, index) => {
