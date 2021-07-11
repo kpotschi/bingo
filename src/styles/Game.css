@@ -1,11 +1,11 @@
 .game {
-	min-width: 450px;
-	min-height: 450px;
+	min-width: 350px;
+	min-height: 350px;
 	max-height: 100%;
 
 	display: grid;
 
-	grid-template-columns: repeat(5, minmax(80px, 12vh));
-	grid-template-rows: repeat(5, minmax(80px, 12vh));
+	grid-template-columns: repeat(5, minmax(50px, 12vh));
+	grid-template-rows: repeat(5, minmax(50px, 12vh));
 	gap: 10px;
 }
