@@ -19,14 +19,18 @@
 	transition: all 130ms ease-in;
 }
 
+.card:hover {
+	transform: rotate(2deg);
+}
+
 .match {
-	color: white;
-	background-color: grey;
+	color: black;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .joker {
 	color: white;
-	background-color: grey;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .card--text {

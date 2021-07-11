@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Card.css';
-import cross from '../imgs/cross.png';
+import cross from '../imgs/cross.svg';
 
 export const Card = ({ sentence, matchHandler, match, identifier }) => {
 	let className = 'card';
