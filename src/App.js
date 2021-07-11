@@ -26,7 +26,9 @@ function App() {
 				<Game userArray={userArray} setUserArray={setUserArray} />
 			</main>
 			<div id='footer'>
-				<button onClick={resetHandler}>Reset</button>
+				<button id='resetButton' onClick={resetHandler}>
+					Reset
+				</button>
 				<div id='winCounter'>Wins : {wins}</div>
 			</div>
 		</div>

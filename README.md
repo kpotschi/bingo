@@ -12,8 +12,9 @@ the app is not perfect at this point. due to time constraints I haven't fully fi
 
 - the responsiveness is not truly smart
 - no accessability features added
-- color contrasts might be inferior
+- color contrasts might be weird
 - i'm sure there's ways to shorten the code
+- could refactor stylesheets to SASS and BEM naming
 
 ## what i'm happy about
 

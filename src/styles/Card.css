@@ -41,6 +41,7 @@
 .card--text__joker {
 	pointer-events: none;
 	z-index: 5;
+	transform: rotate(315deg);
 }
 
 .cross {
@@ -48,4 +49,13 @@
 	z-index: 4;
 	width: 100%;
 	pointer-events: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.card {
+		padding: 2px;
+	}
+	.card--text {
+		font-size: 0.7rem;
+	}
 }
