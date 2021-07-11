@@ -28,15 +28,6 @@
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
-.joker {
-	color: white;
-	background-color: rgba(0, 0, 0, 0.7);
-}
-
-.joker:hover {
-	transform: none;
-}
-
 .card--text {
 	pointer-events: none;
 	z-index: 3;
@@ -49,11 +40,14 @@
 	pointer-events: none;
 }
 
-@media only screen and (max-width: 768px) {
+.joker .cross {
+	transform: translate(0, 18px);
+}
+@media only screen and (max-width: 767px) {
 	.card {
 		padding: 2px;
 	}
 	.card--text {
-		font-size: 0.7rem;
+		font-size: 0.6rem;
 	}
 }

@@ -10,7 +10,7 @@ export const Card = ({ sentence, matchHandler, match, identifier }) => {
 	if (identifier === 12) {
 		return (
 			<div className='square'>
-				<div id={identifier} className='card joker match'>
+				<div id={identifier} className='joker match'>
 					<img className='cross' src={cross} alt='cross' />
 				</div>
 			</div>

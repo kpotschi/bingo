@@ -10,11 +10,15 @@
 
 the app is not perfect at this point. due to time constraints I haven't fully figured out the following parts
 
-- the responsiveness is not truly smart
-- no accessability features added
+- the responsiveness is not truly great - out of shape boxes on small screens
+- no accessibility features added
 - color contrasts might be weird
 - i'm sure there's ways to shorten the code
 - could refactor stylesheets to SASS and BEM naming
+
+## roadmap
+
+- could include localstorage logic
 
 ## what i'm happy about
 
