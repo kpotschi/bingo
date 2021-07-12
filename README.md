@@ -1,5 +1,7 @@
 # bingo app
 
+- just realized the text overflows on certain screens - didn't test enough with different devices.
+
 ## biggest challenges
 
 - actually remembering react
