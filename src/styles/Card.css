@@ -41,9 +41,18 @@
 }
 
 .joker .cross {
-	transform: translate(0, 18px);
+	transform: translate(0, 10px);
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
+	.card {
+		padding: 2px;
+	}
+	.card--text {
+		font-size: 0.6rem;
+	}
+}
+
+@media only screen and (max-height: 850px) {
 	.card {
 		padding: 2px;
 	}
