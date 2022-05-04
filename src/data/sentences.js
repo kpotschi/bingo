@@ -1,38 +1,38 @@
 export const getRandomData = () => {
 	const sentences = [
-		{ sentence: `Who's missing?`, match: false },
-		{ sentence: 'Can you all hear me?', match: false },
-		{ sentence: 'What am I doing wrong?', match: false },
-		{ sentence: 'Can you see me now?', match: false },
-		{ sentence: `~Three ehm's in one sentence~`, match: false },
-		{ sentence: '~Spilled drink~', match: false },
-		{ sentence: '~Talks while muted~', match: false },
-		{ sentence: 'Sorry for the mess', match: false },
-		{ sentence: "What's with the penguin?", match: false },
-		{ sentence: "I couldn't get my camera to work", match: false },
-		{ sentence: 'Can you see my screen?', match: false },
-		{ sentence: 'Can you hear me', match: false },
-		{ sentence: '~Construction at neighbours place', match: false },
-		{ sentence: '~Doorbell rings~', match: false },
-		{ sentence: '~Spilled drink~', match: false },
-		{ sentence: '~Talks while muted~', match: false },
-		{ sentence: '~Construction at neighbours place~', match: false },
-		{ sentence: '~Doorbell rings~', match: false },
-		{ sentence: '~Spilled drink~', match: false },
-		{ sentence: '~Talks while muted~', match: false },
-		{ sentence: 'Sorry for the mess', match: false },
-		{ sentence: "What's with the penguin?", match: false },
-		{ sentence: '~awkward silence~', match: false },
-		{ sentence: '~waiting in the zoom-lobby~', match: false },
-		{ sentence: '~forgot to turn off screen sharing~', match: false },
-		{ sentence: "~there's a cat~", match: false },
-		{ sentence: 'We should hire this dude Kevin', match: false },
-		{ sentence: 'example 30', match: false },
-		{ sentence: 'example 31', match: false },
-		{ sentence: 'example 32', match: false },
-		{ sentence: 'example 33', match: false },
-		{ sentence: 'example 34', match: false },
-		{ sentence: 'example 35', match: false },
+		`Who's missing?`,
+		'Can you all hear me?',
+		'What am I doing wrong?',
+		'Can you see me now?',
+		`~Three ehm's in one sentence~`,
+		'~Spilled drink~',
+		'~Talks while muted~',
+		'Sorry for the mess',
+		"What's with the penguin?",
+		"I couldn't get my camera to work",
+		'Can you see my screen?',
+		'Can you hear me',
+		'~Construction at neighbours place',
+		'~Doorbell rings~',
+		'~Spilled drink~',
+		'~Talks while muted~',
+		'~Construction at neighbours place~',
+		'~Doorbell rings~',
+		'~Spilled drink~',
+		'~Talks while muted~',
+		'Sorry for the mess',
+		"What's with the penguin?",
+		'~awkward silence~',
+		'~waiting in the zoom-lobby~',
+		'~forgot to turn off screen sharing~',
+		"~there's a cat~",
+		'We should hire this dude Kevin',
+		'example 30',
+		'example 31',
+		'example 32',
+		'example 33',
+		'example 34',
+		'example 35',
 	];
 
 	const randomize = (array) => {
@@ -43,7 +43,13 @@ export const getRandomData = () => {
 			array[j] = temp;
 		}
 
-		return array;
+		let fullArray = array.map((item) => {
+			const asObj = {};
+			asObj.sentence = item;
+			asObj.match = false;
+			return asObj;
+		});
+		return fullArray;
 	};
 
 	return randomize(new Array(sentences)[0]).slice(0, 25);
